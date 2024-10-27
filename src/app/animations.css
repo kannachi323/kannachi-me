@@ -1,0 +1,23 @@
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+}
+
+.animate-metronome-hover:hover {
+  animation: heartbeat 0.5s ease-in-out infinite;
+}
+
+.animate-metronome {
+  animation: heartbeat 0.45s ease-in-out infinite;
+}
+
+
+
+.custom-cursor {
+  cursor: url('/images/cursor.png'), auto;
+  
+}
