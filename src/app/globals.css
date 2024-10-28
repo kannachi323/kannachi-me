@@ -13,3 +13,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   cursor: url('/images/cursor.png'), auto;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  max-width: 100%;
+}

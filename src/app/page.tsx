@@ -7,6 +7,7 @@ import Link from "next/link"
 import ZoomInHover from '@/animations/ZoomIn';
 import PageTransition from '@/animations/PageTransition';
 
+import { NavBar } from '@/components/NavBar';
 
 export default function Home() {
   const [showOptions, setShowOptions] = useState(false)
@@ -18,10 +19,17 @@ export default function Home() {
 
 
   return (
-    <PageTransition className="flex flex-col justify-center items-center h-[90vh] w-full" isMounted={isMounted}>
-      
-  
+    <>
+
+      <PageTransition isMounted={isMounted}>
+
+        <NavBar />
+      </PageTransition>
+      <PageTransition className="relative flex flex-col justify-center items-center h-[90vh] w-full" isMounted={isMounted}>
+        
       {/* Profile Image */}
+
+
 
       <ZoomInHover className={`${showOptions ? 'absolute z-[5] left-[20vw]' : 'relative' } `}>
         <div
@@ -35,7 +43,7 @@ export default function Home() {
         />
       </ZoomInHover>
 
-    
+
       {/* Conditionally render the buttons */}
       <div className={`flex flex-col items-start justify-evenly h-[60vh] w-1/2 transition-opacity duration-700 ease-in-out absolute left-[30vw]
         ${showOptions ? 'opacity-100 visible' : 'opacity-0 invisible'} z-0`}>
@@ -64,6 +72,10 @@ export default function Home() {
           </Link>
         </ZoomInHover>
       </div>
-    </PageTransition>
+
+
+      </PageTransition>
+    </>
+   
   );
 }
