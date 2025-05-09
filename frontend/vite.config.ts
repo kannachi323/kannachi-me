@@ -20,6 +20,11 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, 'src/assets'),
       '@utils': path.resolve(__dirname, 'src/utils'),
     }
-  }
+  },
+  base: '/kannachi323.github.io/',
+  build: {
+    outDir: '../docs',
+    emptyOutDir: true,
+  },
 
 })
