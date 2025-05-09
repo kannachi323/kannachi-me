@@ -1,0 +1,1 @@
+import{j as s}from"./index-BdXVhUzX.js";import{b as a,c as e,d as i,e as n}from"./index-BFcHohbo.js";function c(){return s.jsx("div",{className:"w-full h-[12vh] flex flex-row p-2 bg-black/25",children:s.jsx(r,{})})}function r(){return s.jsxs(s.Fragment,{children:[s.jsx(a,{size:42}),s.jsx(e,{size:42}),s.jsx(i,{size:42}),s.jsx(n,{size:42})]})}export{c as M,r as S};

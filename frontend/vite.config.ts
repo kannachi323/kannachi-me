@@ -21,7 +21,7 @@ export default defineConfig({
       '@utils': path.resolve(__dirname, 'src/utils'),
     }
   },
-  base: '/kannachi323.github.io/',
+  base: '/',
   build: {
     outDir: '../docs',
     emptyOutDir: true,
